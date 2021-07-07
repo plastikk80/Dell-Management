@@ -1,0 +1,6 @@
+
+Check CSR
+openssl req -verify -in <CSRlocation>.csr -text -noout
+
+Generate CRT
+openssl x509 -req -days 1825 -in <locationofrequestfile>.csr -CA <locationofsignedCAcert> -CAkey <locationofCAkey> -CAcreateserial -out <locationtoputsignedcertfile>.crt -sha256
