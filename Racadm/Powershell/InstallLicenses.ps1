@@ -2,9 +2,10 @@
 #This script will install licenses on multiple iDRACs.
 #CSV must have at least the following headers: ipaddress,location
 #File is where the CSV file is located.
-#License file name must match service tag.
+#License file name must match service tag (ex. xrg457h.xml).
+#Location is where the license files are located
 #Location must end in a \
-#########################################################################################################
+##########################################################################################################
 
 #File containing iDRAC and license information
 $file=Import-csv c:\scripts\iDRACs.csv
